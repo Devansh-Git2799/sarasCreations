@@ -62,13 +62,8 @@ const Navbar = () => {
           </HStack>
         </HStack>
         <Flex alignItems='center'>
-          <NavLink>
-            <Icon
-              as={colorMode === 'light' ? MoonIcon : SunIcon}
-              alignSelf='center'
-              onClick={() => toggleColorMode()}
-            />
-          </NavLink>
+          <Icon as={colorMode === 'light' ? MoonIcon : SunIcon} alignSelf='center' onClick={() => toggleColorMode()} />
+
           <Button as={ReactLink} to='/login' p='2' fontSize='sm' fontWeight={400} variant='link'>
             SignIn
           </Button>
